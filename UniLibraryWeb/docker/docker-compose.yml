@@ -5,7 +5,7 @@ services:
    tomcat1:
       image: library-tomcat:8.5.47
       ports:
-         - "8080:8080"
+         - "9090:8080"
       links:
          - "mysql1:mysql"
       deploy:
