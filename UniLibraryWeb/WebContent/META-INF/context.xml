@@ -4,8 +4,8 @@
 	
 	<Resource name="jdbc/UniLibraryDS" auth="Container"
 		type="javax.sql.DataSource" maxActive="100" maxIdle="30"
-		maxWait="10000" username="root" password="admin"
+		maxWait="10000" username="root" password="mysql"
 		driverClassName="com.mysql.jdbc.Driver"
-		url="jdbc:mysql://localhost:3306/uni_library_db?autoReconnect=true" />
+		url="jdbc:mysql://mysql:3306/uni_library_db?autoReconnect=true" />
 
 </Context>
