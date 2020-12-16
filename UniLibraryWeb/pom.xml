@@ -83,6 +83,12 @@
 						
 						
 						</dependency>
+						<dependency>
+						    <groupId>junit</groupId>
+						    <artifactId>junit</artifactId>
+						    <version>4.13</version>
+						    <scope>test</scope>
+						</dependency>
 					
 					</dependencies>
 				</plugin>
@@ -109,6 +115,7 @@
 					<warSourceDirectory>WebContent</warSourceDirectory>
 				</configuration>
 			</plugin>
+			
 			<plugin>
 				<groupId>org.apache.tomcat.maven</groupId>
 				<artifactId>tomcat7-maven-plugin</artifactId>
@@ -119,7 +126,12 @@
 					<password>tomcat</password>
 				</configuration>
 			</plugin>
-
+			<plugin>
+	            <groupId>org.sonarsource.scanner.maven</groupId>
+	            <artifactId>sonar-maven-plugin</artifactId>
+	            <version>3.7.0.1746</version>
+	        </plugin>
+			
 
 
 		</plugins>
