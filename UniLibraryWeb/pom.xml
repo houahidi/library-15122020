@@ -58,6 +58,19 @@
           <warSourceDirectory>WebContent</warSourceDirectory>
         </configuration>
       </plugin>
+      <plugin>
+	          <groupId>org.apache.tomcat.maven</groupId>
+	          <artifactId>tomcat7-maven-plugin</artifactId>
+	          
+	       		<configuration>
+	       			<url>http://localhost:9090/manager/text</url>
+	       			<username>tomcat</username>
+	       			<password>tomcat</password>
+	       		</configuration>
+	   </plugin>
+      
+      
+      
     </plugins>
   </build>
 </project>
